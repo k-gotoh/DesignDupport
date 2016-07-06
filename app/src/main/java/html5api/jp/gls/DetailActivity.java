@@ -79,14 +79,32 @@ public class DetailActivity extends Activity {
         mViewPagerIndicator = (ViewPagerIndicator) findViewById(R.id.indicator);
         mViewPagerIndicator.setCount(adapter.getCount());
 
-        mViewPager
-                .setOnPageChangeListener(new ViewPager.SimpleOnPageChangeListener() {
-                    @Override
-                    public void onPageSelected(int position) {
-                        super.onPageSelected(position);
-                        mViewPagerIndicator.setCurrentPosition(position);
-                    }
-                });
+//        mViewPager
+//                .setOnPageChangeListener(new ViewPager.SimpleOnPageChangeListener() {
+//                    @Override
+//                    public void onPageSelected(int position) {
+//                        super.onPageSelected(position);
+//                        mViewPagerIndicator.setCurrentPosition(position);
+//                    }
+//                });
+
+        mViewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+            @Override
+            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+
+            }
+
+            @Override
+            public void onPageSelected(int position) {
+                //super.onPageSelected(position);
+                mViewPagerIndicator.setCurrentPosition(position);
+            }
+
+            @Override
+            public void onPageScrollStateChanged(int state) {
+
+            }
+        });
     }
 
     static class CustomPagerAdapter extends PagerAdapter {
