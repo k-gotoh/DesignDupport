@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/ex_effect"
+            android:icon="@android:drawable/ic_menu_gallery"
+            android:title="その他のエフェクト" />
+
+
+    </group>
+    <item
+        android:title="セールスから探す">
+        <menu android:checkableBehavior="single">
+
+            <item
+                android:id="@+id/menu_app_description"
+                android:title="WOMEN" />
+            <item
+                android:id="@+id/menu_setting"
+                android:title="MEN" />
+
+            <item
+                android:id="@+id/menu_b"
+                android:title="BEAUTY" />
+            <item
+                android:id="@+id/menu_h"
+                android:title="HOME&amp;LIFESTYLE" />
+            <item
+                android:id="@+id/menu_k"
+                android:title="KIDS" />
+            <item
+                android:id="@+id/menu_l"
+                android:title="LIKE" />
+        </menu>
+    </item>
+
+    <item
+        android:title="アイテムから探す">
+        <menu android:checkableBehavior="single">
+
+            <item
+                android:id="@+id/menu_21"
+                android:title="Wアイテムから探す" />
+
+        </menu>
+    </item>
+
+    <item
+        android:title="バイヤーズセレクション">
+        <menu android:checkableBehavior="single">
+
+            <item
+                android:id="@+id/menu_31"
+                android:title="TRIP" />
+        </menu>
+    </item>
+</menu>
